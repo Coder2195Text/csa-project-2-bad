@@ -16,7 +16,6 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ClientModInitializer;
 
-import mods.coder2195.notjavascript.init.NotJavascriptModScreens;
 import mods.coder2195.notjavascript.init.NotJavascriptModBlocks;
 
 @Environment(EnvType.CLIENT)
@@ -25,7 +24,6 @@ public class ClientInit implements ClientModInitializer {
 	public void onInitializeClient() {
 
 		NotJavascriptModBlocks.clientLoad();
-		NotJavascriptModScreens.load();
 
 	}
 }

@@ -1,5 +1,7 @@
 {
   "block.not_javascript.uranium_ore": "Uranium Ore",
   "block.not_javascript.enrichment_table": "Enrichment Table",
-  "item.not_javascript.raw_uranium": "Raw Uranium"
+  "item.not_javascript.raw_uranium": "Raw Uranium",
+  "block.not_javascript.enriching_table": "Enriching Table",
+  "gui.not_javascript.enrichment_gui.label_enrichment_table": "Enrichment Table"
 }

@@ -18,14 +18,13 @@ import mods.coder2195.notjavascript.NotJavascriptMod;
 public class NotJavascriptModItems {
 	public static Item RAW_URANIUM;
 	public static Item URANIUM_ORE;
-	public static Item ENRICHMENT_TABLE;
+	public static Item ENRICHING_TABLE;
 
 	public static void load() {
 		RAW_URANIUM = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "raw_uranium"), new RawUraniumItem());
 		URANIUM_ORE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "uranium_ore"), new BlockItem(NotJavascriptModBlocks.URANIUM_ORE, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(content -> content.accept(URANIUM_ORE));
-		ENRICHMENT_TABLE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "enrichment_table"), new BlockItem(NotJavascriptModBlocks.ENRICHMENT_TABLE, new Item.Properties()));
-		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(content -> content.accept(ENRICHMENT_TABLE));
+		ENRICHING_TABLE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "enriching_table"), new BlockItem(NotJavascriptModBlocks.ENRICHING_TABLE, new Item.Properties()));
 	}
 
 	public static void clientLoad() {

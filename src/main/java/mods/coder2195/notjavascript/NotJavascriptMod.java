@@ -18,10 +18,10 @@ import org.apache.logging.log4j.LogManager;
 import net.fabricmc.api.ModInitializer;
 
 import mods.coder2195.notjavascript.init.NotJavascriptModProcedures;
-import mods.coder2195.notjavascript.init.NotJavascriptModMenus;
 import mods.coder2195.notjavascript.init.NotJavascriptModItems;
 import mods.coder2195.notjavascript.init.NotJavascriptModFeatures;
 import mods.coder2195.notjavascript.init.NotJavascriptModBlocks;
+import mods.coder2195.notjavascript.init.NotJavascriptModBlockEntities;
 
 public class NotJavascriptMod implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -33,12 +33,11 @@ public class NotJavascriptMod implements ModInitializer {
 
 		NotJavascriptModBlocks.load();
 		NotJavascriptModItems.load();
+		NotJavascriptModBlockEntities.load();
 
 		NotJavascriptModFeatures.load();
 
 		NotJavascriptModProcedures.load();
-
-		NotJavascriptModMenus.load();
 
 	}
 }

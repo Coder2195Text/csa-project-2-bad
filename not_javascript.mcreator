@@ -64,31 +64,31 @@
       }
     },
     {
-      "name": "EnrichmentTable",
+      "name": "EnrichingTable",
       "type": "block",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enrichment_table",
+      "registry_name": "enriching_table",
       "metadata": {
         "files": [
-          "src/main/resources/assets/not_javascript/models/item/enrichment_table.json",
-          "src/main/resources/assets/not_javascript/blockstates/enrichment_table.json",
-          "src/main/java/mods/coder2195/notjavascript/block/EnrichmentTableBlock.java",
-          "src/main/resources/assets/not_javascript/models/block/enrichment_table.json"
+          "src/main/resources/assets/not_javascript/blockstates/enriching_table.json",
+          "src/main/java/mods/coder2195/notjavascript/block/EnrichingTableBlock.java",
+          "src/main/resources/assets/not_javascript/models/block/enriching_table.json",
+          "src/main/java/mods/coder2195/notjavascript/block/entity/EnrichingTableBlockEntity.java",
+          "src/main/resources/assets/not_javascript/models/item/enriching_table.json"
         ]
       }
     },
     {
-      "name": "EnrichmentGUI",
-      "type": "gui",
+      "name": "EnrichingTableRecipe",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "enrichment_gui",
+      "registry_name": "enriching_table_recipe",
       "metadata": {
         "files": [
-          "src/main/java/mods/coder2195/notjavascript/client/gui/EnrichmentGUIScreen.java",
-          "src/main/java/mods/coder2195/notjavascript/world/inventory/EnrichmentGUIMenu.java"
+          "src/main/resources/data/not_javascript/recipes/enriching_table_recipe.json"
         ]
       }
     }
@@ -100,6 +100,7 @@
       "block.not_javascript.uranium_ore": "Uranium Ore",
       "block.not_javascript.enrichment_table": "Enrichment Table",
       "item.not_javascript.raw_uranium": "Raw Uranium",
+      "block.not_javascript.enriching_table": "Enriching Table",
       "gui.not_javascript.enrichment_gui.label_enrichment_table": "Enrichment Table"
     }
   },
