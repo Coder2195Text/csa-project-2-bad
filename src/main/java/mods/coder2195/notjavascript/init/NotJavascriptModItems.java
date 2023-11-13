@@ -25,6 +25,7 @@ public class NotJavascriptModItems {
 		URANIUM_ORE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "uranium_ore"), new BlockItem(NotJavascriptModBlocks.URANIUM_ORE, new Item.Properties()));
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(content -> content.accept(URANIUM_ORE));
 		ENRICHING_TABLE = Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(NotJavascriptMod.MODID, "enriching_table"), new BlockItem(NotJavascriptModBlocks.ENRICHING_TABLE, new Item.Properties()));
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.FUNCTIONAL_BLOCKS).register(content -> content.accept(ENRICHING_TABLE));
 	}
 
 	public static void clientLoad() {
