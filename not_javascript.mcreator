@@ -62,6 +62,35 @@
           "src/main/resources/data/not_javascript/loot_tables/blocks/uranium_ore.json"
         ]
       }
+    },
+    {
+      "name": "EnrichmentTable",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enrichment_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/models/item/enrichment_table.json",
+          "src/main/resources/assets/not_javascript/blockstates/enrichment_table.json",
+          "src/main/java/mods/coder2195/notjavascript/block/EnrichmentTableBlock.java",
+          "src/main/resources/assets/not_javascript/models/block/enrichment_table.json"
+        ]
+      }
+    },
+    {
+      "name": "EnrichmentGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enrichment_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/mods/coder2195/notjavascript/client/gui/EnrichmentGUIScreen.java",
+          "src/main/java/mods/coder2195/notjavascript/world/inventory/EnrichmentGUIMenu.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -69,7 +98,9 @@
   "language_map": {
     "en_us": {
       "block.not_javascript.uranium_ore": "Uranium Ore",
-      "item.not_javascript.raw_uranium": "Raw Uranium"
+      "block.not_javascript.enrichment_table": "Enrichment Table",
+      "item.not_javascript.raw_uranium": "Raw Uranium",
+      "gui.not_javascript.enrichment_gui.label_enrichment_table": "Enrichment Table"
     }
   },
   "foldersRoot": {

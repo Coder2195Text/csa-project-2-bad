@@ -6,10 +6,13 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 
 public class UraniumOreWitherProcedure {
-	public static void execute(Entity entity) {
-		if (entity == null)
+	public static void execute(Entity e) {
+		if (e == null)
 			return;
-		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 60, 1, false, true));
+		if (e instanceof LivingEntity entity && !entity.level().isClientSide()) {
+			entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1, false, true));
+			entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 5, false, true));
+			entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 1, false, true));
+		}
 	}
 }
