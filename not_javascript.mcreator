@@ -1,0 +1,97 @@
+{
+  "mod_elements": [
+    {
+      "name": "UraniumOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/not_javascript/blockstates/uranium_ore.json",
+          "src/main/resources/assets/not_javascript/models/block/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/configured_feature/uranium_ore.json",
+          "src/main/java/mods/coder2195/notjavascript/block/UraniumOreBlock.java",
+          "src/main/java/mods/coder2195/notjavascript/world/features/ores/UraniumOreFeature.java",
+          "src/main/resources/assets/not_javascript/models/item/uranium_ore.json",
+          "src/main/resources/data/not_javascript/worldgen/placed_feature/uranium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RawUranium",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_uranium",
+      "metadata": {
+        "files": [
+          "src/main/java/mods/coder2195/notjavascript/item/RawUraniumItem.java",
+          "src/main/resources/assets/not_javascript/models/item/raw_uranium.json"
+        ]
+      }
+    },
+    {
+      "name": "UraniumOreWither",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore_wither",
+      "metadata": {
+        "files": [
+          "src/main/java/mods/coder2195/notjavascript/procedures/UraniumOreWitherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UraniumOreLoot",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uranium_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/not_javascript/loot_tables/blocks/uranium_ore.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.not_javascript.uranium_ore": "Uranium Ore",
+      "item.not_javascript.raw_uranium": "Raw Uranium"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "not_javascript",
+    "modName": "Not Javascript",
+    "version": "1.0.0",
+    "author": "coder2195, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.20.1",
+    "modElementsPackage": "mods.coder2195.notjavascript",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

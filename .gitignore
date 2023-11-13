@@ -1,0 +1,29 @@
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+gradle/
+
+# vscode
+
+.settings/
+bin/
+.classpath
+.project
+
+*mcreator-backup*
+
+
+# fabric
+
+run/

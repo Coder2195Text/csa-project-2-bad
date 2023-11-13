@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mods.coder2195.notjavascript.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+	"NotJavascriptModRepairItemRecipeMixin"  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}
