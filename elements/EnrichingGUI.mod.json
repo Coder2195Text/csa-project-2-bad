@@ -81,7 +81,7 @@
             "fixedValue": "Inventory"
           },
           "color": {
-            "value": -10066330,
+            "value": -12829636,
             "falpha": 0.0
           },
           "x": 132,
@@ -94,7 +94,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

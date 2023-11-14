@@ -67,7 +67,7 @@ public class EnrichingGUIScreen extends AbstractContainerScreen<EnrichingGUIMenu
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(font, Component.translatable("gui.not_javascript.enriching_gui.label_enriching_table"), 6, 7, -10066330);
-		guiGraphics.drawString(font, Component.translatable("gui.not_javascript.enriching_gui.label_inventory"), 6, 70, -10066330);
+		guiGraphics.drawString(font, Component.translatable("gui.not_javascript.enriching_gui.label_inventory"), 6, 70, -12829636);
 	}
 
 	@Override
