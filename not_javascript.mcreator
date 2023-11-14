@@ -36,6 +36,7 @@
     {
       "name": "UraniumOreWither",
       "type": "procedure",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "uranium_ore_wither",
@@ -91,6 +92,33 @@
           "src/main/resources/data/not_javascript/recipes/enriching_table_recipe.json"
         ]
       }
+    },
+    {
+      "name": "EnrichingGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/mods/coder2195/notjavascript/world/inventory/EnrichingGUIMenu.java",
+          "src/main/java/mods/coder2195/notjavascript/client/gui/EnrichingGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "EnrichingTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enriching_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/mods/coder2195/notjavascript/procedures/EnrichingTickProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -98,9 +126,11 @@
   "language_map": {
     "en_us": {
       "block.not_javascript.uranium_ore": "Uranium Ore",
+      "gui.not_javascript.enriching_gui.label_inventory": "Inventory",
       "block.not_javascript.enrichment_table": "Enrichment Table",
       "item.not_javascript.raw_uranium": "Raw Uranium",
       "block.not_javascript.enriching_table": "Enriching Table",
+      "gui.not_javascript.enriching_gui.label_enriching_table": "Enriching Table",
       "gui.not_javascript.enrichment_gui.label_enrichment_table": "Enrichment Table"
     }
   },

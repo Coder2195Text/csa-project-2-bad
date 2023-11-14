@@ -5,7 +5,6 @@ import org.jetbrains.annotations.Nullable;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.WorldlyContainer;
@@ -21,12 +20,13 @@ import net.minecraft.core.BlockPos;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 
+import mods.coder2195.notjavascript.world.inventory.EnrichingGUIMenu;
 import mods.coder2195.notjavascript.init.NotJavascriptModBlockEntities;
 
 import java.util.stream.IntStream;
 
 public class EnrichingTableBlockEntity extends RandomizableContainerBlockEntity implements ExtendedScreenHandlerFactory, WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(3, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(4, ItemStack.EMPTY);
 
 	public EnrichingTableBlockEntity(BlockPos position, BlockState state) {
 		super(NotJavascriptModBlockEntities.ENRICHING_TABLE, position, state);
@@ -82,7 +82,7 @@ public class EnrichingTableBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return ChestMenu.threeRows(id, inventory);
+		return new EnrichingGUIMenu(id, inventory, this);
 	}
 
 	@Override

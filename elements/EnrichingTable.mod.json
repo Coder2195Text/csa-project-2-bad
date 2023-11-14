@@ -101,9 +101,9 @@
     "breakHarvestLevel": 3,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "<NONE>",
-    "openGUIOnRightClick": false,
-    "inventorySize": 3,
+    "guiBoundTo": "EnrichingGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 4,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "EnrichingTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

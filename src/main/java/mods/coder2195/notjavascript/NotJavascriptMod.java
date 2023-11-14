@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import net.fabricmc.api.ModInitializer;
 
 import mods.coder2195.notjavascript.init.NotJavascriptModProcedures;
+import mods.coder2195.notjavascript.init.NotJavascriptModMenus;
 import mods.coder2195.notjavascript.init.NotJavascriptModItems;
 import mods.coder2195.notjavascript.init.NotJavascriptModFeatures;
 import mods.coder2195.notjavascript.init.NotJavascriptModBlocks;
@@ -38,6 +39,8 @@ public class NotJavascriptMod implements ModInitializer {
 		NotJavascriptModFeatures.load();
 
 		NotJavascriptModProcedures.load();
+
+		NotJavascriptModMenus.load();
 
 	}
 }
